@@ -1,1 +1,52 @@
 Fecha de entrega: 25 marzo
+/* 
+Escriba un programa que calcule el precio del tiquete de entrada a un museo
+El precio de los tiquetes sigues las siguientes reglas:
+    1. El precio base sin descuento es de 5000
+    2. Niños menores de 12 años entran gratis
+    3. Personas mayores de 65 años tienen un 40% de descuento
+    4. Personas con un id de estudiantes tienen un 25% de descuento, sin importar la edad
+    5. Personas con cupón de descuento, se les puede aplicar el descuento descrito en el cupón.
+    6. Solo un descuento se aplica a cada tiquete, el más alto, por lo tanto, para una persona 
+    con id de estudiante y con un cupón de 30% de descuento, solo aplicará uno de los dos descuentos.
+*/
+
+const age = 30;
+const hasCoupon = true;
+const couponDiscount = 10;
+const hasStudentId = false;
+
+// Escriba su código aquí calculando el price
+
+// Resultado final con el price calculado:
+console.log('El precio de su tiquete es: ', price);
+
+// Ejemplos:
+
+// ----- 1 ------
+// age = 30;
+// hasCoupon = false;
+// couponDiscount = 0;
+// hasStudentId = false;
+// El precio de su tiquete es: 5000
+
+// ----- 2 ------
+// age = 25;
+// hasCoupon = true;
+// couponDiscount = 10;
+// hasStudentId = true;
+// El precio de su tiquete es: 3750
+
+// ----- 2 ------
+// age = 11;
+// hasCoupon = false;
+// couponDiscount = 0;
+// hasStudentId = true;
+// El precio de su tiquete es: 0
+
+// ----- 3 ------
+// age = 15;
+// hasCoupon = true;
+// couponDiscount = 70;
+// hasStudentId = true;
+// El precio de su tiquete es: 1500
