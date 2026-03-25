@@ -48,10 +48,7 @@ if (age < 12) {
     let bestDiscount = Math.max(discountAdult, discountStudent, discountCoupon); // bestDiscount pasa a ser el mejor descuento
     let finalDiscount = basePrice * (bestDiscount / 100);
 
-    
-
     finalPrice = basePrice - finalDiscount;
-
 }
 
 // Resultado final con el price calculado:
